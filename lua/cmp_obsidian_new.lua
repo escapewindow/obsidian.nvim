@@ -54,6 +54,11 @@ source.complete = function(_, request, callback)
     return
   end
 
+  if true then
+    callback { isInclomplete = true }
+    return
+  end
+
   -- Create a mock block.
   ---@type obsidian.note.Block|?
   local block
